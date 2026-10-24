@@ -1,0 +1,136 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #dbeafe, #f5e8ff);
+    color: #172554;
+}
+
+.card {
+    width: 100%;
+    max-width: 430px;
+    padding: 32px 24px;
+    text-align: center;
+    background: white;
+    border-radius: 24px;
+    box-shadow: 0 15px 45px #1e3a8a22;
+}
+
+.eyebrow {
+    color: #6366f1;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.avatar {
+    position: relative;
+    width: 160px;
+    height: 190px;
+    margin: 28px auto;
+}
+
+.antenna {
+    width: 5px;
+    height: 28px;
+    margin: auto;
+    background: #64748b;
+    position: relative;
+}
+
+.antenna::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -6px;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background: #f59e0b;
+}
+
+.face {
+    position: relative;
+    height: 105px;
+    margin-top: 4px;
+    border: 5px solid #64748b;
+    border-radius: 35px;
+    background: #bfdbfe;
+    z-index: 1;
+}
+
+.eyes {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    padding-top: 27px;
+}
+
+.eyes span {
+    width: 13px;
+    height: 17px;
+    border-radius: 50%;
+    background: #1e3a8a;
+}
+
+.smile {
+    width: 32px;
+    height: 13px;
+    margin: 10px auto;
+    border-bottom: 4px solid #1e3a8a;
+    border-radius: 50%;
+}
+
+.body {
+    width: 90px;
+    height: 48px;
+    margin: -2px auto;
+    border-radius: 20px 20px 12px 12px;
+    background: #6366f1;
+}
+
+h1 {
+    font-size: 27px;
+}
+
+#message {
+    min-height: 72px;
+    line-height: 1.7;
+    color: #475569;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    border-radius: 12px;
+    background: #4f46e5;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #3730a3;
+}
+
+button:disabled {
+    opacity: 0.65;
+    cursor: wait;
+}
+
+#status {
+    margin-bottom: 0;
+    color: #64748b;
+    font-size: 13px;
+}

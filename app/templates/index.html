@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My AI Avatar</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="/static/script.js" defer></script>
+</head>
+
+<body>
+    <main class="card">
+        <p class="eyebrow">YOUR VIRTUAL ASSISTANT</p>
+
+        <div class="avatar" role="img" aria-label="Cartoon robot avatar">
+            <div class="antenna"></div>
+            <div class="face">
+                <div class="eyes">
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="smile"></div>
+            </div>
+            <div class="body"></div>
+        </div>
+
+        <h1>Hello, I'm Alex!</h1>
+
+        <p id="message">
+            Hi! I'm your AI assistant. Click below to hear my introduction.
+        </p>
+
+        <audio id="audio" preload="none"></audio>
+
+        <button id="speakButton" type="button">
+            🔊 Introduce Yourself
+        </button>
+
+        <p id="status" aria-live="polite">Ready to meet you!</p>
+    </main>
+</body>
+</html>
